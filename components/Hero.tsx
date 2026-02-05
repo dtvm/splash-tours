@@ -22,7 +22,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl mb-12 max-w-2xl mx-auto text-white/90 drop-shadow-lg font-light">
-            Private island tours, beaches, snorkeling, and hidden gems — at your pace.
+            Ride. Explore. Discover Paradise<br />Turn Your Cruise Stop Into the Best Day of Your Trip
           </p>
         </div>
 

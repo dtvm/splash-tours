@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     description:
       "Discover the best Roatan tours with Splash Tours. Water bike tours, mangrove tunnels, beach activities & more. Perfect for cruise ship guests visiting Roatan Island.",
     type: "website",
-    url: "https://splashtours.com",
+    url: "https://splashtoursroatan.com",
     siteName: "Splash Tours",
     images: [
       {
-        url: "https://splashtours.com/og-image.jpg",
+        url: "https://splashtoursroatan.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Splash Tours - Roatan Island Adventures",

@@ -3,13 +3,13 @@ const tours = [
     title: "Water Bike & Beach Adventure Tour",
     description:
       "Experience the perfect mix of fun, relaxation, and adventure with our Water Bike & Beach Tour! Ride across calm, crystal-clear waters on an easy-to-use water bike (no experience needed), then unwind on a beautiful tropical beach.\n\nThis tour is ideal for couples, families, friends, and cruise ship guests looking for a safe, exciting, and memorable experience.",
-    icon: "🏝️"
+    icon: "🤿"
   },
   {
     title: "Mangrove Tunnel Tour",
     description:
       "Discover the magic of our Mangrove Tunnel Tour, an unforgettable adventure that takes you deep into a peaceful network of winding mangrove waterways. Glide through narrow natural tunnels formed by arching mangrove trees, where calm waters reflect the beauty of untouched nature all around you.",
-    icon: "🤿"
+    icon: "🏝️"
   },
   {
     title: "Custom Private Tour",
@@ -51,7 +51,7 @@ export default function Tours({ fullPage = false, onBack }: { fullPage?: boolean
               <h3 className="text-2xl font-bold mb-2 text-gray-900 group-hover:text-cyan-600 transition-colors duration-300 min-h-16">
                 {tour.title}
               </h3>
-              
+
               <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">
                 {tour.description}
               </p>

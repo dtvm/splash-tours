@@ -1,19 +1,24 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
-  title: "Splash Tours | Roatan Island Tours & Activities",
+  title: "Roatan Tours & Water Activities | Splash Tours",
   description:
-    "Ride. Explore. Discover Paradise. Turn Your Cruise Stop Into the Best Day of Your Trip",
-  keywords: "Roatan tours, island tours, snorkeling, beach tours, Roatan activities, Caribbean tours",
-  authors: [{ name: "Splash Tours" }],
+    "Discover the best Roatan tours with Splash Tours. Water bike tours, mangrove tunnels, beach activities & more. Perfect for cruise ship guests visiting Roatan Island.",
+  keywords: "Roatan tours, water bike tour Roatan, mangrove tunnel tour, island tours, snorkeling Roatan, beach tours, Roatan activities, Caribbean tours, cruise tours",
+  authors: [{ name: "Marty Dixon" }],
   openGraph: {
-    title: "Splash Tours | Roatan Island Tours & Activities",
+    title: "Roatan Tours & Water Activities | Splash Tours",
     description:
-      "Ride. Explore. Discover Paradise. Turn Your Cruise Stop Into the Best Day of Your Trip",
+      "Discover the best Roatan tours with Splash Tours. Water bike tours, mangrove tunnels, beach activities & more. Perfect for cruise ship guests visiting Roatan Island.",
     type: "website",
     url: "https://splashtours.com",
     siteName: "Splash Tours",
@@ -28,11 +33,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Splash Tours | Roatan Island Tours",
-    description: "Ride. Explore. Discover Paradise",
+    title: "Roatan Tours & Water Activities | Splash Tours",
+    description: "Discover the best Roatan tours - water bikes, mangrove tunnels, beach activities & more",
   },
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({

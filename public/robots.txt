@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://splashtoursroatan.com/sitemap.xml
+
+# Crawl delay (optional - be nice to servers)
+# Uncomment if you want to set a crawl delay
+# Crawl-delay: 1

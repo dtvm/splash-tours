@@ -1,21 +1,18 @@
 const tours = [
   {
-    title: "Island Highlights Tour",
-    duration: "4–5 hours",
+    title: "Water Bike & Beach Adventure Tour",
     description:
-      "Explore the best of Roatan with a local guide. Visit West Bay, West End, scenic viewpoints, and enjoy local food stops.",
+      "Experience the perfect mix of fun, relaxation, and adventure with our Water Bike & Beach Tour! Ride across calm, crystal-clear waters on an easy-to-use water bike (no experience needed), then unwind on a beautiful tropical beach.\n\nThis tour is ideal for couples, families, friends, and cruise ship guests looking for a safe, exciting, and memorable experience.",
     icon: "🏝️"
   },
   {
-    title: "Beach & Snorkel Tour",
-    duration: "Half day",
+    title: "Mangrove Tunnel Tour",
     description:
-      "Relax at Roatan's most beautiful beaches and snorkel crystal-clear waters at hand-picked spots.",
+      "Discover the magic of our Mangrove Tunnel Tour, an unforgettable adventure that takes you deep into a peaceful network of winding mangrove waterways. Glide through narrow natural tunnels formed by arching mangrove trees, where calm waters reflect the beauty of untouched nature all around you.",
     icon: "🤿"
   },
   {
     title: "Custom Private Tour",
-    duration: "Flexible",
     description:
       "Build your own experience. Perfect for families, groups, or travelers with specific interests.",
     icon: "🎯"
@@ -51,15 +48,11 @@ export default function Tours({ fullPage = false, onBack }: { fullPage?: boolean
             >
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">{tour.icon}</div>
               
-              <h3 className="text-2xl font-bold mb-2 text-gray-900 group-hover:text-cyan-600 transition-colors duration-300">
+              <h3 className="text-2xl font-bold mb-2 text-gray-900 group-hover:text-cyan-600 transition-colors duration-300 min-h-16">
                 {tour.title}
               </h3>
-
-              <p className="text-sm font-semibold text-cyan-600 mb-4">
-                {tour.duration}
-              </p>
-
-              <p className="text-gray-700 leading-relaxed">
+              
+              <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">
                 {tour.description}
               </p>
             </div>

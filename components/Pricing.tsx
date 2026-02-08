@@ -1,24 +1,25 @@
 const pricing = [
   {
-    name: "Island Highlights",
+    name: "Water Bike & Beach Adventure Tour",
     price: "$60",
     note: "per person",
     details: [
-      "Private local guide",
-      "Island viewpoints",
-      "West Bay & West End",
-      "Flexible pace",
+      "Private transportation",
+      "Life jacket provided",
+      "Water Bike",
+      "Beach time",
     ],
   },
   {
-    name: "Beach & Snorkel",
-    price: "$75",
+    name: "Mangrove Tunnel Tour",
+    price: "$65",
     note: "per person",
     details: [
-      "Best beaches",
-      "Snorkeling spots",
-      "Relaxed experience",
-      "All ages welcome",
+      "Scenic ride through natural mangrove tunnels",
+      "Knowledgeable local guide",
+      "Wildlife viewing and photo opportunities",
+      "Calm, safe, and friendly experience",
+      "Suitable for all ages"
     ],
   },
   {

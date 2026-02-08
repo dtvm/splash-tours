@@ -33,7 +33,7 @@ export default function Gallery({ fullPage = false, onBack }: { fullPage?: boole
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          {images.map((src) => (
+          {images.map((src, index) => (
             <div
               key={src}
               className="group relative aspect-square overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
@@ -42,6 +42,8 @@ export default function Gallery({ fullPage = false, onBack }: { fullPage?: boole
                 src={src}
                 alt="Roatan tour photo"
                 fill
+                priority={index < 3}
+                sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
               />
             </div>

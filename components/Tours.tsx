@@ -3,13 +3,19 @@ const tours = [
     title: "Water Bike & Beach Adventure Tour",
     description:
       "Experience the perfect mix of fun, relaxation, and adventure with our Water Bike & Beach Tour! Ride across calm, crystal-clear waters on an easy-to-use water bike (no experience needed), then unwind on a beautiful tropical beach.\n\nThis tour is ideal for couples, families, friends, and cruise ship guests looking for a safe, exciting, and memorable experience.",
-    icon: "🤿"
+    icon: "🌊"
   },
   {
     title: "Mangrove Tunnel Tour",
     description:
       "Discover the magic of our Mangrove Tunnel Tour, an unforgettable adventure that takes you deep into a peaceful network of winding mangrove waterways. Glide through narrow natural tunnels formed by arching mangrove trees, where calm waters reflect the beauty of untouched nature all around you.",
     icon: "🏝️"
+  },
+  {
+    title: "2-Tank Scuba Dive Adventure",
+    description:
+      "Experience the best of the underwater world with our 2-Tank Scuba Dive—perfect for certified divers looking to explore vibrant coral reefs, colorful tropical fish, and stunning marine life. Dive two different sites on the same trip, giving you more bottom time and more chances to discover something unforgettable.\n\nOur experienced local dive guides prioritize safety while making sure you have an amazing, relaxed dive.",
+    icon: "🤿"
   },
   {
     title: "Custom Private Tour",
@@ -40,7 +46,7 @@ export default function Tours({ fullPage = false, onBack }: { fullPage?: boolean
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-6">
           {tours.map((tour) => (
             <div
               key={tour.title}

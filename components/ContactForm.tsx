@@ -1,12 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-const tours = [
-  "Island Highlights",
-  "Beach & Snorkel",
-  "Custom Private Tour",
-];
+import { tours } from "./Tours";
 
 export default function ContactForm({ fullPage = false, onBack }: { fullPage?: boolean; onBack?: () => void }) {
   const [formData, setFormData] = useState({
@@ -107,7 +102,7 @@ export default function ContactForm({ fullPage = false, onBack }: { fullPage?: b
             >
               <option value="">Select a Tour</option>
               {tours.map((t) => (
-                <option key={t} value={t}>{t}</option>
+                <option key={t.title} value={t.title}>{t.title}</option>
               ))}
             </select>
 

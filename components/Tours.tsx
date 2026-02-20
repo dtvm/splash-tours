@@ -1,4 +1,4 @@
-const tours = [
+export const tours = [
   {
     title: "Water Bike & Beach Adventure Tour",
     description:

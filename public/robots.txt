@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Specify sitemap location
-Sitemap: https://splashtoursroatan.com/sitemap.xml
+Sitemap: https://www.splashtoursroatan.com/sitemap.xml
 
 # Crawl delay (optional - be nice to servers)
 # Uncomment if you want to set a crawl delay

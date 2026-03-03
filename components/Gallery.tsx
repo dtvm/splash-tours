@@ -12,6 +12,17 @@ const images = [
   "/gallery/6.jpg",
 ];
 
+const scubaImages = [
+  "/gallery/scuba-1.jpeg",
+  "/gallery/scuba-2.jpeg",
+  "/gallery/scuba-3.jpeg",
+  "/gallery/scuba-4.jpeg",
+  "/gallery/scuba-5.jpeg",
+  "/gallery/scuba-6.jpeg",
+  "/gallery/scuba-7.jpeg",
+  "/gallery/scuba-8.jpeg",
+];
+
 const waterBikeImages = images.slice(0, 4);
 const mangroveImages = images.slice(4);
 
@@ -74,6 +85,28 @@ export default function Gallery({ fullPage = false, onBack }: { fullPage?: boole
                   alt="Roatan tour photo"
                   fill
                   sizes="(max-width: 768px) 50vw, 50vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">2-Tank Scuba Dive Adventure</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {scubaImages.map((src, index) => (
+              <div
+                key={src}
+                onClick={() => setSelectedImage(src)}
+                className="group relative aspect-square overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              >
+                <Image
+                  src={src}
+                  alt="Roatan scuba diving photo"
+                  fill
+                  priority={index < 3}
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
